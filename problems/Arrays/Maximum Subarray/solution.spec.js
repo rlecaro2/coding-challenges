@@ -2,7 +2,7 @@ import test from 'ava';
 import solution from './solution';
 import cases from './test-cases';
 
-const problem = __dirname;
+const problem = solution.name;
 
 function testCase(t, input, expected) {
     t.is(solution(input), expected);
