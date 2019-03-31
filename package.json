@@ -4,7 +4,8 @@
     "description": "Test edge cases of custom functions using nodejs and avajs",
     "main": "index.js",
     "scripts": {
-        "test": "ava ./**/*.spec.js --verbose"
+        "test-all": "ava ./**/*.spec.js --verbose",
+        "watch": "ava --watch ./**/*.spec.js --verbose"
     },
     "author": "rlecaro2",
     "license": "ISC",
