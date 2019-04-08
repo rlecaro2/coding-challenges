@@ -1,16 +1,22 @@
 /**
  * @param {number[]} height
  * @return {number}
+ * @see {url} https://leetcode.com/problems/container-with-most-water/discuss/6100/Simple-and-clear-proofexplanation
  */
 const maxArea = function maxArea(heights) {
     let area = 0;
-    for (let i = 0; i < heights.length - 1; i += 1) {
-        const pillar1 = heights[i];
-        for (let j = i + 1; j < heights.length; j += 1) {
-            const pillar2 = heights[j];
-            const base = j - i;
-            const newArea = base * Math.min(pillar1, pillar2);
-            area = Math.max(area, newArea);
+    let left = 0;
+    let right = heights.length - 1;
+
+    while (left < right) {
+        const base = right - left;
+        area = Math.max(area, base * Math.min(heights[left], heights[right]));
+
+        // keep the bigger one
+        if (heights[left] <= heights[right]) {
+            left += 1;
+        } else {
+            right -= 1;
         }
     }
 
