@@ -8,9 +8,9 @@
 | Array               | Maximum Product Subarray                                        |   Medium   | [URL][6]  | :ballot_box_with_check: |
 | Array               | Find Minimum in Rotated Sorted Array                            |   Medium   | [URL][7]  | :ballot_box_with_check: |
 | Array               | Search in Rotated Sorted Array                                  |   Medium   | [URL][8]  | :ballot_box_with_check: |
-| Array               | 3Sum                                                            |            | [URL][9]  | :ballot_box_with_check: |
-| Array               | Container With Most Water                                       |            | [URL][10] | :ballot_box_with_check: |
-| Binary              | Sum of Two Integers                                             |            | [URL][11] | :black_square_button:   |
+| Array               | 3Sum                                                            |   Medium   | [URL][9]  | :ballot_box_with_check: |
+| Array               | Container With Most Water                                       |   Medium   | [URL][10] | :ballot_box_with_check: |
+| Binary              | Sum of Two Integers                                             |    Easy    | [URL][11] | :black_square_button:   |
 | Binary              | Number of 1 Bits                                                |            | [URL][12] | :black_square_button:   |
 | Binary              | Counting Bits                                                   |            | [URL][13] | :black_square_button:   |
 | Binary              | Missing Number                                                  |            | [URL][14] | :black_square_button:   |
