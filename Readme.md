@@ -15,8 +15,8 @@
 | Binary              | Counting Bits                                                   |            | [URL][13] | :black_square_button:   |
 | Binary              | Missing Number                                                  |            | [URL][14] | :black_square_button:   |
 | Binary              | Reverse Bits                                                    |            | [URL][15] | :black_square_button:   |
-| Dynamic Programming | Climbing Stairs                                                 |            | [URL][16] | :black_square_button:   |
-| Dynamic Programming | Coin Change                                                     |            | [URL][17] | :black_square_button:   |
+| Dynamic Programming | Climbing Stairs                                                 |    Easy    | [URL][16] | :ballot_box_with_check: |
+| Dynamic Programming | Coin Change                                                     |   Medium   | [URL][17] | :black_square_button:   |
 | Dynamic Programming | Longest Increasing Subsequence                                  |            | [URL][18] | :black_square_button:   |
 | Dynamic Programming | Word Break Problem                                              |            | [URL][19] | :black_square_button:   |
 | Dynamic Programming | Combination Sum                                                 |            | [URL][20] | :black_square_button:   |
