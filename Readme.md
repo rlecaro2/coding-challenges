@@ -18,7 +18,7 @@
 | Dynamic Programming | Climbing Stairs                                                 |    Easy    | [URL][16] | :ballot_box_with_check: |
 | Dynamic Programming | Coin Change                                                     |   Medium   | [URL][17] | :ballot_box_with_check: |
 | Dynamic Programming | Longest Increasing Subsequence                                  |   Medium   | [URL][18] | :ballot_box_with_check: |
-| Dynamic Programming | Word Break Problem                                              |            | [URL][19] | :black_square_button:   |
+| Dynamic Programming | Word Break Problem                                              |   Medium   | [URL][19] | :ballot_box_with_check: |
 | Dynamic Programming | Combination Sum                                                 |            | [URL][20] | :black_square_button:   |
 | Dynamic Programming | House Robber                                                    |            | [URL][21] | :black_square_button:   |
 | Dynamic Programming | House Robber II                                                 |            | [URL][22] | :black_square_button:   |
