@@ -20,7 +20,7 @@
 | Dynamic Programming | Longest Increasing Subsequence                                  |   Medium   | [URL][18] | :ballot_box_with_check: |
 | Dynamic Programming | Word Break Problem                                              |   Medium   | [URL][19] | :ballot_box_with_check: |
 | Dynamic Programming | Combination Sum                                                 |   Medium   | [URL][20] | :ballot_box_with_check: |
-| Dynamic Programming | House Robber                                                    |            | [URL][21] | :black_square_button:   |
+| Dynamic Programming | House Robber                                                    |    Easy    | [URL][21] | :ballot_box_with_check: |
 | Dynamic Programming | House Robber II                                                 |            | [URL][22] | :black_square_button:   |
 | Dynamic Programming | Decode Ways                                                     |            | [URL][23] | :black_square_button:   |
 | Dynamic Programming | Unique Paths                                                    |            | [URL][24] | :black_square_button:   |

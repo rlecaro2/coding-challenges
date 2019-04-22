@@ -25,7 +25,6 @@ const lengthOfLIS = function lengthOfLIS(nums) {
                 };
             }
         }
-        // console.log(`Solution for ${num} is ${JSON.stringify(solutions[i], null, 2)}`);
         maxLength = Math.max(maxLength, solutions[i].len);
     }
 
