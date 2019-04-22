@@ -11,23 +11,24 @@
  * @return {number}
  */
 const rob = nums => {
-    const solutions = [];
+    const solutions = [0, 0, 0];
 
     for (let i = 0; i < nums.length; i += 1) {
-        const num = nums[i];
-        solutions[i] = num;
+        let newSol = 0;
 
         // check last 2 possible options
-        for (let j = i - 3; j <= i - 2; j += 1) {
-            const solution = solutions[j];
-            if (solution && solution + num > solutions[i]) {
-                solutions[i] = solution + num;
-            }
+        if (i >= 2) {
+            const prev = solutions[0] > solutions[1] ? solutions[0] : solutions[1];
+            newSol = nums[i] + prev;
+        } else {
+            newSol = nums[i];
         }
+
+        solutions.push(newSol);
+        solutions.shift();
     }
 
-    const values = solutions.slice(-2);
-    return Math.max(...values, 0);
+    return Math.max(...solutions, 0);
 };
 
 export default rob;
