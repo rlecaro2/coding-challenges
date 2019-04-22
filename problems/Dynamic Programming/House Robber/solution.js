@@ -15,20 +15,18 @@ const rob = nums => {
 
     for (let i = 0; i < nums.length; i += 1) {
         const num = nums[i];
-        solutions[i] = {
-            lastPicked: i,
-            robbed: num,
-        };
+        solutions[i] = num;
 
-        for (let j = 0; j < i; j += 1) {
+        // check last 2 possible options
+        for (let j = i - 3; j <= i - 2; j += 1) {
             const solution = solutions[j];
-            if (solution.lastPicked < i - 1 && solution.robbed + num > solutions[i].robbed) {
-                solutions[i].robbed = solution.robbed + num;
+            if (solution && solution + num > solutions[i]) {
+                solutions[i] = solution + num;
             }
         }
     }
 
-    const values = solutions.map(s => s.robbed);
+    const values = solutions.slice(-2);
     return Math.max(...values, 0);
 };
 
