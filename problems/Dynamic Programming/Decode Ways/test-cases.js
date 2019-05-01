@@ -49,4 +49,9 @@ export default [
         input: '301',
         output: 0,
     },
+    {
+        // case 11
+        input: '17',
+        output: 2,
+    },
 ];

@@ -1,37 +1,25 @@
-const memo = {};
-
-const canBeDecoded = arr => {
-    if (arr[0] === '0') {
-        return false;
-    }
-
-    const num = parseInt(arr.join(''), 10);
-    if (num >= 1 && num <= 26) {
-        return true;
-    }
-
-    return false;
-};
-
 const decodeWays = arr => {
-    if (memo[arr]) {
-        return memo[arr];
+    if (arr.length === 0) {
+        return 0;
     }
 
-    let total = 0;
-    if (canBeDecoded(arr)) {
-        total += 1;
-    }
-
-    for (let i = 1; i <= 2; i += 1) {
-        if (canBeDecoded(arr.slice(0, i))) {
-            const otherWays = decodeWays(arr.slice(i));
-            total += otherWays;
+    const solutions = [];
+    solutions[arr.length] = 1;
+    for (let i = arr.length - 1; i >= 0; i -= 1) {
+        if (arr[i] === '0') {
+            solutions[i] = 0;
+        } else {
+            solutions[i] = solutions[i + 1];
+            const lessThan20 = arr[i] === '1' && arr[i + 1] <= '9';
+            const lessThan26 = arr[i] === '2' && arr[i + 1] < '7';
+            if (lessThan20 || lessThan26) {
+                const twoPrev = solutions[i + 2] !== undefined ? solutions[i + 2] : 1;
+                solutions[i] += twoPrev;
+            }
         }
     }
 
-    memo[arr] = total;
-    return total;
+    return solutions[0];
 };
 
 /**
