@@ -23,7 +23,7 @@
 | Dynamic Programming | House Robber                                                    |    Easy    | [URL][21] | :ballot_box_with_check: |
 | Dynamic Programming | House Robber II                                                 |   Medium   | [URL][22] | :ballot_box_with_check: |
 | Dynamic Programming | Decode Ways                                                     |   Medium   | [URL][23] | :ballot_box_with_check: |
-| Dynamic Programming | Unique Paths                                                    |            | [URL][24] | :black_square_button:   |
+| Dynamic Programming | Unique Paths                                                    |   Medium   | [URL][24] | :ballot_box_with_check: |
 | Dynamic Programming | Jump Game                                                       |            | [URL][25] | :black_square_button:   |
 | Graph               | Clone Graph                                                     |            | [URL][26] | :black_square_button:   |
 | Graph               | Course Schedule                                                 |            | [URL][27] | :black_square_button:   |
