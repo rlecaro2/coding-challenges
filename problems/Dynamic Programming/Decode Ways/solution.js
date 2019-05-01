@@ -3,23 +3,25 @@ const decodeWays = arr => {
         return 0;
     }
 
-    const solutions = [];
-    solutions[arr.length] = 1;
+    const solutions = [0, 1];
     for (let i = arr.length - 1; i >= 0; i -= 1) {
+        let newSol;
         if (arr[i] === '0') {
-            solutions[i] = 0;
+            newSol = 0;
         } else {
-            solutions[i] = solutions[i + 1];
+            [, newSol] = solutions; // last solution
             const lessThan20 = arr[i] === '1' && arr[i + 1] <= '9';
             const lessThan26 = arr[i] === '2' && arr[i + 1] < '7';
             if (lessThan20 || lessThan26) {
-                const twoPrev = solutions[i + 2] !== undefined ? solutions[i + 2] : 1;
-                solutions[i] += twoPrev;
+                const twoPrev = solutions[0] !== undefined ? solutions[0] : 1;
+                newSol += twoPrev;
             }
         }
-    }
 
-    return solutions[0];
+        solutions.push(newSol);
+        solutions.shift();
+    }
+    return solutions.pop();
 };
 
 /**
