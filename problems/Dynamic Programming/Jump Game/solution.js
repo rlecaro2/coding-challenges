@@ -8,18 +8,26 @@
 const canJump = arr => {
     if (arr.length === 1) return true;
 
-    const canJumps = [true];
-    for (let i = 0; i < arr.length; i += 1) {
-        for (let j = 0; j <= arr[i]; j += 1) {
-            if (canJumps[i]) {
-                canJumps[i + j] = true;
-            } else {
-                canJumps[i] = false;
+    // DFS:
+    const moves = [0];
+    let i = 0;
+    while (arr[i] > 0 || moves.length > 0) {
+        if (i + 1 >= arr.length) {
+            return true;
+        }
+
+        const move = moves.pop();
+        i += move;
+        if (arr[i] > 0) {
+            for (let j = 1; j <= arr[i]; j += 1) {
+                moves.push(-1 * j);
+                moves.push(j);
             }
+            arr[i] = 0;
         }
     }
 
-    return canJumps[arr.length - 1];
+    return false;
 };
 
 export default canJump;
