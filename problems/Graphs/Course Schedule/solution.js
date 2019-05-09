@@ -18,13 +18,13 @@ const canFinish = (numCourses, prerequisites) => {
         // let's assume theres only one adjacency
         const [to, from] = prerequisites[i];
         if (!pre[to]) {
-            pre[to] = { [from]: true };
+            pre[to] = [from];
         } else {
-            pre[to][from] = true;
+            pre[to].push(from);
         }
 
         if (!pre[from]) {
-            pre[from] = {};
+            pre[from] = [];
         }
     }
 
@@ -35,18 +35,20 @@ const canFinish = (numCourses, prerequisites) => {
         for (let i = 0; i < pre.length; i += 1) {
             if (!pre[i]) continue;
 
-            Object.keys(pre[i]).forEach(key => {
-                if (sorted[key]) {
-                    delete pre[i][key];
+            for (let j = 0; j < pre[i].length; j += 1) {
+                const req = pre[i][j];
+                if (pre[i][j] !== undefined && sorted[req]) {
+                    delete pre[i][j];
                 }
-            });
+            }
 
-            if (Object.keys(pre[i]).length === 0) {
+            if (pre[i].filter(e => e !== undefined).length === 0) {
                 found = true;
                 sorted[i] = true;
                 pre[i] = undefined;
             }
         }
+
         if (!found) {
             break;
         }
