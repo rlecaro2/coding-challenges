@@ -26,7 +26,7 @@
 | Dynamic Programming | Unique Paths                                                    |   Medium   | [URL][24] | :ballot_box_with_check: |
 | Dynamic Programming | Jump Game                                                       |   Medium   | [URL][25] | :ballot_box_with_check: |
 | Graph               | Clone Graph                                                     |            | [URL][26] | :black_square_button:   |
-| Graph               | Course Schedule                                                 |            | [URL][27] | :black_square_button:   |
+| Graph               | Course Schedule                                                 |   Medium   | [URL][27] | :ballot_box_with_check: |
 | Graph               | Pacific Atlantic Water Flow                                     |            | [URL][28] | :black_square_button:   |
 | Graph               | Number of Islands                                               |            | [URL][29] | :black_square_button:   |
 | Graph               | Longest Consecutive Sequence                                    |            | [URL][30] | :black_square_button:   |
