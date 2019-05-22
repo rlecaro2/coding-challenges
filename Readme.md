@@ -28,7 +28,7 @@
 | Graph               | Clone Graph                                                     |            | [URL][26] | :black_square_button:   |
 | Graph               | Course Schedule                                                 |   Medium   | [URL][27] | :ballot_box_with_check: |
 | Graph               | Pacific Atlantic Water Flow                                     |   Medium   | [URL][28] | :ballot_box_with_check: |
-| Graph               | Number of Islands                                               |            | [URL][29] | :black_square_button:   |
+| Graph               | Number of Islands                                               |   Medium   | [URL][29] | :ballot_box_with_check: |
 | Graph               | Longest Consecutive Sequence                                    |            | [URL][30] | :black_square_button:   |
 | Graph               | Alien Dictionary (Premium)                                      |            | [URL][31] | :black_square_button:   |
 | Graph               | Graph Valid Tree (Premium)                                      |            | [URL][32] | :black_square_button:   |
