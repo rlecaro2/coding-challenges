@@ -73,7 +73,7 @@
 | Tree                | Add and Search Word                                             |            | [URL][71] | :black_square_button:   |
 | Tree                | Word Search II                                                  |            | [URL][72] | :black_square_button:   |
 | Heap                | Merge K Sorted Lists                                            |            | [URL][73] | :black_square_button:   |
-| Heap                | Top K Frequent Elements                                         |            | [URL][74] | :black_square_button:   |
+| Heap                | Top K Frequent Elements                                         |   Medium   | [URL][74] | :ballot_box_with_check: |
 | Heap                | Find Median from Data Stream                                    |            | [URL][75] | :black_square_button:   |
 
 [1]: https://leetcode.com/problems/two-sum/                                                  
