@@ -5,7 +5,7 @@ import cases from './test-cases';
 const problem = solution.name;
 
 function testCase(t, inputs, expected) {
-    t.deepEqual(solution(...inputs), expected);
+    t.deepEqual(solution(...inputs).sort(), expected.sort());
 }
 
 cases.forEach((tCase, i) => {
