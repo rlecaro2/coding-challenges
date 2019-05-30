@@ -72,7 +72,7 @@
 | Tree                | Implement Trie (Prefix Tree)                                    |            | [URL][70] | :black_square_button:   |
 | Tree                | Add and Search Word                                             |            | [URL][71] | :black_square_button:   |
 | Tree                | Word Search II                                                  |            | [URL][72] | :black_square_button:   |
-| Heap                | Merge K Sorted Lists                                            |            | [URL][73] | :black_square_button:   |
+| Heap                | Merge K Sorted Lists                                            |    Hard    | [URL][73] | :ballot_box_with_check: |
 | Heap                | Top K Frequent Elements                                         |   Medium   | [URL][74] | :ballot_box_with_check: |
 | Heap                | Find Median from Data Stream                                    |            | [URL][75] | :black_square_button:   |
 
