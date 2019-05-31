@@ -74,7 +74,7 @@
 | Tree                | Word Search II                                                  |            | [URL][72] | :black_square_button:   |
 | Heap                | Merge K Sorted Lists                                            |    Hard    | [URL][73] | :ballot_box_with_check: |
 | Heap                | Top K Frequent Elements                                         |   Medium   | [URL][74] | :ballot_box_with_check: |
-| Heap                | Find Median from Data Stream                                    |            | [URL][75] | :black_square_button:   |
+| Heap                | Find Median from Data Stream                                    |    Hard    | [URL][75] | :ballot_box_with_check: |
 
 [1]: https://leetcode.com/problems/two-sum/                                                  
 [2]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/                          
