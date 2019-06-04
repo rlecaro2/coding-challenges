@@ -34,7 +34,7 @@
 | Graph               | Graph Valid Tree (Premium)                                      |            | [URL][32] | :black_square_button:   |
 | Graph               | Number of Connected Components in an Undirected Graph (Premium) |            | [URL][33] | :black_square_button:   |
 | Interval            | Insert Interval                                                 |            | [URL][34] | :black_square_button:   |
-| Interval            | Merge Intervals                                                 |            | [URL][35] | :black_square_button:   |
+| Interval            | Merge Intervals                                                 |   Medium   | [URL][35] | :ballot_box_with_check: |
 | Interval            | Non-overlapping Intervals                                       |            | [URL][36] | :black_square_button:   |
 | Interval            | Meeting Rooms (Premium)                                         |            | [URL][37] | :black_square_button:   |
 | Interval            | Meeting Rooms II (Premium)                                      |            | [URL][38] | :black_square_button:   |
