@@ -4,27 +4,19 @@
  */
 const merge = intervals => {
     intervals.sort((a, b) => a[0] - b[0]);
-    let i = 0;
-    let j = 1;
-    while (j < intervals.length) {
-        const first = intervals[i];
-        const second = intervals[j];
 
-        const [s1, e1] = first;
-        const [s2, e2] = second;
+    const result = [];
+    for (let i = 0; i < intervals.length; i += 1) {
+        const [start, end] = intervals[i];
+        const prev = result[result.length - 1];
 
-        if (s2 <= e1 || e1 >= e2) {
-            const endest = Math.max(e1, e2);
-            intervals[i] = [s1, endest]; // merged element
-
-            intervals.splice(j, 1); // remove element at j
+        if (prev && start <= prev[1]) {
+            prev[1] = Math.max(prev[1], end);
         } else {
-            i += 1;
-            j += 1;
+            result.push(intervals[i]);
         }
     }
-
-    return intervals;
+    return result;
 };
 
 export default merge;
