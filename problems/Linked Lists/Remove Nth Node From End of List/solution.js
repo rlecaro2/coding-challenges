@@ -13,21 +13,20 @@
 const removeNthFromEnd = (head, n) => {
     if (!head || !n) return null;
 
-    const queue = new Array(n + 1);
-    let current = head;
-    let length = 0;
-
-    while (current) {
-        queue.push(current);
-        queue.shift();
-        current = current.next;
-        length += 1;
+    let fast = head;
+    for (let i = 0; i < n; i += 1) {
+        fast = fast.next;
     }
 
-    if (length <= n) return head.next;
+    if (!fast) return head.next;
 
-    const [before, , newNext] = queue;
-    before.next = newNext;
+    let slow = head;
+    while (fast.next) {
+        fast = fast.next;
+        slow = slow.next;
+    }
+
+    slow.next = slow.next.next;
     return head;
 };
 
