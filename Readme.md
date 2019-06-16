@@ -41,8 +41,8 @@
 | Linked List         | Reverse a Linked List                                           |    Easy    | [URL][39] | :ballot_box_with_check: |
 | Linked List         | Detect Cycle in a Linked List                                   |    Easy    | [URL][40] | :ballot_box_with_check: |
 | Linked List         | Merge Two Sorted Lists                                          |    Easy    | [URL][41] | :ballot_box_with_check: |
-| Linked List         | Merge K Sorted Lists                                            |            | [URL][42] | :black_square_button:   |
-| Linked List         | Remove Nth Node From End Of List                                |            | [URL][43] | :black_square_button:   |
+| Linked List         | Merge K Sorted Lists (Duplicate)                                |    Hard    | [URL][42] | :ballot_box_with_check: |
+| Linked List         | Remove Nth Node From End Of List                                |   Medium   | [URL][43] | :ballot_box_with_check: |
 | Linked List         | Reorder List                                                    |            | [URL][44] | :black_square_button:   |
 | Matrix              | Set Matrix Zeroes                                               |            | [URL][45] | :black_square_button:   |
 | Matrix              | Spiral Matrix                                                   |            | [URL][46] | :black_square_button:   |
